@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate People</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- google font link  -->
+
+    <!-- Tailwind and DaisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind and DaisyUI link  -->
+
+    <!-- Font Awesome link  -->
+    <script src="https://kit.fontawesome.com/2a577dd113.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome link  -->
+    <!-- Tailwind customization -->
+     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'lexend': ['Lexend', 'sans-serif'],
+                    },
+                    colors: {
+                        'text-black': '#111111',
+                        primary: '#B4F461',
+                        secondary: '#575655',
+                        'border-bg': 'rgba(17, 17, 17, 0.30)',
+                    },
+                    boxShadow: {
+                        'outline': 'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind customization -->
+</head>
+<body class="font-lexend">
+    
+    <header class="sticky top-0 z-50 backdrop-blur-2xl">
+         <!-- Navbar  -->
+       <nav class="bg-[#F9F7F3] py-3 px-4">
+        <div class="container mx-auto">
+            <div class="navbar flex flex-col md:flex-row justify-between">
+                <div class="order-3 md:order-1">
+                    <a class="btn bg-primary text-lg font-semibold px-8">Blogs</a>
+                </div>
+        
+                <div class="flex items-center gap-4 order-1 md:order-2">
+                    <img src="./assets/logo.png" alt="Logo image" class="w-10">
+                    <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+                </div>
+                <div class="px-4 py-3 space-x-1 order-2 md:order-3">
+                    <span class="bg-[#f39e09] py-1 px-2 text-xs rounded-full text-white"><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                    <span id="main-balance" class="text-secondary font-medium text-xl">10500 </span>
+                    <span class="text-secondary font-medium text-xl">BDT</span>
+                </div>
+            </div>
+        </div>
+       </nav>
+        <!-- Navbar  -->
+
+        <!-- Button   -->
+         <div class="container mx-auto text-center mt-20 pb-4 space-x-4">
+            <button id="donation-btn" class="donation-history btn bg-primary text-lg font-semibold px-8 rounded-lg border border-primary">Donation</button>
+            <button id="history-btn" class="donation-history btn bg-white text-secondary border border-border-bg text-lg font-medium px-8 rounded-lg">History</button>
+         </div>
+        <!-- Button   -->
+     </header>
+    <!-- Navbar  -->
+
+    <!-- Main part -->
+    <main class="container mx-auto">
+        <section id="donation-container" class="space-y-8 px-4">
+            <!-- Part one  -->
+           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 rounded-xl shadow-outline">
+                <div class="h-full">
+                    <img src="./assets/noakhali.png" alt="" class="w-full h-auto md:h-[420px]">
+                </div>
+                <div class="space-y-5">
+                    <p class="bg-[#f3f3f3] px-4 py-3 max-w-max rounded-xl text-secondary text-base">
+                        <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                        <span id="donation-kurigram-amount" class="donation-main-balance">5000 </span>
+                        <span>BDT</span>
+                    </p>
+                    <h3 id="kurigram-donation-title" class="text-xl font-bold text-text-black">Donate for Flood at Kurigram, Bangladesh</h3>
+                    <p class="font-light text-base text-secondary">Together, we can rebuild and restore hope for the families affected by the floods in Noakhali. Your support is essential
+                    in providing clean water, food, medical supplies, and shelter to those who have lost everything. Every contribution
+                    helps us reach more individuals in need and brings a sense of security during this challenging time. 
+                    <br>
+                    Let’s come together
+                    to support our fellow Bangladeshis, demonstrating our compassion and readiness to help.
+                    By uniting our efforts, we can ensure that no one is left behind, helping families regain their sense of stability and
+                    dignity.
+                    </p>
+                    <div>
+                        <input id="donate-kurigram-input" type="text" name="" id="" class="input input-bordered w-full" placeholder="Write Donation Amount">
+                    </div>
+                    <button id="donate-kurigram" class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+                </div>
+           </div>
+
+        <!-- Part two  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 rounded-xl shadow-outline">
+            <div class="h-full">
+                <img src="./assets/feni.png" alt="" class="w-full h-auto md:h-[420px]">
+            </div>
+            <div class="space-y-5">
+                <p class="bg-[#f3f3f3] px-4 py-3 max-w-max rounded-xl text-secondary text-base">
+                    <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                    <span class="donation-main-balance">5000 </span>
+                    <span>BDT</span>
+                </p>
+                <h3 class="text-xl font-bold text-text-black">Donate for Flood Relief in Feni,Bangladesh</h3>
+                <p class="font-light text-base text-secondary">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous
+                donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this
+                calamity. By coming together as a community, we can show our solidarity and compassion for our fellow citizens.
+                Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                </p>
+                <div>
+                    <input type="text" name="" id="" class="input input-bordered w-full" placeholder="Write Donation Amount">
+                </div>
+                <button class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+            </div>
+        </div>
+
+        <!-- Part three  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 rounded-xl shadow-outline">
+            <div class="h-full">
+                <img src="./assets/quota-protest.png" alt="" class="w-full h-auto md:h-[420px]">
+            </div>
+            <div class="space-y-5">
+                <p class="bg-[#f3f3f3] px-4 py-3 max-w-max rounded-xl text-secondary text-base">
+                    <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i
+                            class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                    <span class="donation-main-balance">15000 </span>
+                    <span>BDT</span>
+                </p>
+                <h3 class="text-xl font-bold text-text-black">Aid for Injured in the Quota Movement</h3>
+                <p class="font-light text-base text-secondary">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support
+                is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. 
+                <br>
+                By contributing,
+                you help ensure that injured individuals receive the care and support they need during this challenging time. Every
+                donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a
+                donation to support these brave individuals in their time of need.
+                </p>
+                <div>
+                    <input type="text" name="" id="" class="input input-bordered w-full" placeholder="Write Donation Amount">
+                </div>
+                <button class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+            </div>
+        </div>
+
+        <!-- Part Four  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 rounded-xl shadow-outline">
+            <div class="h-full">
+                <img src="./assets/quota-protest.png" alt="" class="w-full h-auto md:h-[420px]">
+            </div>
+            <div id="last" class="space-y-5">
+                <p class="bg-[#f3f3f3] px-4 py-3 max-w-max rounded-xl text-secondary text-base">
+                    <span id="coin-logo" class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i
+                            class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                    <span class="donation-main-balance">15000 </span>
+                    <span>BDT</span>
+                </p>
+                <h3 class="text-xl font-bold text-text-black">Helping poor people for this coming winter, Bangladesh</h3>
+                <p class="font-light text-base text-secondary">Help for the poor people this coming winter is crucial as we approach the colder months. It’s essential to extend our
+                support to those in need, especially the vulnerable families who struggle to stay warm and nourished during this time.
+                This winter, let’s come together to provide warm clothing, blankets, and nutritious food to those facing hardships. Your
+                contributions can make a significant difference in their lives, helping to shield them from the harsh elements and
+                ensuring they have enough to eat. By sharing our resources, we can bring warmth and comfort to our neighbors and uplift
+                our communities.
+                </p>
+                <div>
+                    <input type="text" name="" id="" class="input input-bordered w-full" placeholder="Write Donation Amount">
+                </div>
+                <button class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- History section  -->
+         <section id="history-container" class="hidden px-4">
+            <!-- <div class="p-8 shadow-outline rounded-xl space-y-2 mb-3">
+                <h4 class="text-xl font-bold text-text-black">
+                    <span id="">96500</span>
+                    <span>Taka is</span>
+                    <span>Donated for famine-2024 at Feni, Bangladesh</span>
+                </h4>
+                <p class="text-secondary font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+            </div> -->
+            <!-- others -->
+         </section>
+        <!-- History section  -->
+    </main>
+    <!-- Main part -->
+
+
+
+    <!-- Js file link  -->
+     <script src="./js/features.js"></script>
+     <script src="./js/app.js"></script>
+    <!-- Js file link  -->
+</body>
+</html>

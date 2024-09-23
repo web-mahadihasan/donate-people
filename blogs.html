@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate People</title>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- google font link  -->
+
+    <!-- Tailwind and DaisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind and DaisyUI link  -->
+
+    <!-- Font Awesome link  -->
+    <script src="https://kit.fontawesome.com/2a577dd113.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome link  -->
+    <!-- Tailwind customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'lexend': ['Lexend', 'sans-serif'],
+                    },
+                    colors: {
+                        'text-black': '#111111',
+                        primary: '#B4F461',
+                        secondary: '#575655',
+                    },
+                    boxShadow: {
+                        'outline': 'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind customization -->
+</head>
+
+<body class="font-lexend">
+
+    <header class="">
+        <!-- Navbar  -->
+        <nav class="bg-[#F9F7F3] py-3 px-4">
+            <div class="container mx-auto">
+                <div class="navbar flex flex-col md:flex-row justify-between">
+                    <div class="order-3 md:order-1">
+                        <a class="btn bg-primary text-lg font-semibold px-8 order-3 md:order-1">Blogs</a>
+                    </div>
+
+                    <div class="flex items-center gap-4 order-1 md:order-2">
+                        <img src="./assets/logo.png" alt="Logo image" class="w-10">
+                        <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+                    </div>
+                    <div class="px-4 py-3 space-x-1 order-2 md:order-3">
+                        <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i
+                                class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                        <span class="text-secondary font-medium text-xl">10500 </span>
+                        <span class="text-secondary font-medium text-xl">BDT</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar  -->
+    </header>
+    <!-- Navbar  -->
+
+    <!-- Main part -->
+    <main class="container mx-auto">
+        <section class="mt-8 px-4">
+            <h1 class="flex items-center gap-2 font-extrabold text-4xl">
+                <span>Important FAQ</span>
+                <span><img src="./assets/question.png" alt="" class=""></span>
+            </h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
+                <div class="flex justify-center ">
+                    <img src="./assets/faq.png" alt="" class="">
+                </div>
+                <div class="col-span-2">
+                    <div class="join join-vertical w-full">
+                        <div class="collapse collapse-arrow join-item border-base-300 border py-5">
+                            <input type="radio" name="my-accordion-4" checked="checked" />
+                            <div class="collapse-title text-xl font-medium text-text-black">What is the Document Object Model (DOM)?</div>
+                            <div class="collapse-content">
+                                <p class="text-secondary">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each node in the tree corresponds to a part of the document, such as
+                                elements, attributes, and text.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border-base-300 border py-5">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-xl font-medium text-black">How do you select and Elements from DOM?</div>
+                            <div class="collapse-content">
+                                <p class="text-secondary">Selecting elements from the DOM can be done basically four methods in JavaScript. Here are the most common ways: </p>
+                                <ul class="list-decimal list-inside text-secondary space-y-1 mt-2">
+                                    <li>getElementById()</li>
+                                    <li>getElementsByClassName()</li>
+                                    <li>getElementsByTagName()</li>
+                                    <li>querySelector()</li>
+                                    <li>querySelectorAll()</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border-base-300 border py-5">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-xl font-medium text-text-black">What is event delegation in the context of the dom and why is it useful?</div>
+                            <div class="collapse-content">
+                                <p class="text-secondary">Event delegation is a technique in JavaScript that allows you to handle events at a higher level in the DOM rather than
+                                attaching event listeners directly to individual elements. Instead of adding a listener to each child element, you add a
+                                single listener to a parent element, which then responds to events that bubble up from its children.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow join-item border-base-300 border py-5">
+                            <input type="radio" name="my-accordion-4" />
+                            <div class="collapse-title text-xl font-medium text-text-black">How do you manupulate elements attribute and style using the DOM?</div>
+                            <div class="collapse-content">
+                                <p class="text-secondary">Manipulating attributes and styles in the DOM allows you to dynamically change the behavior and appearance of web
+                                elements, enabling rich, interactive web applications.</p>
+                                <p class="text-secondary">Styles determine the visual presentation of HTML elements. CSS is typically used to define
+                                styles, but you can manipulate styles directly through the DOM.</p>
+                                <ul class="list-decimal list-inside text-secondary space-y-1 mt-2">
+                                    <li>HTML Attributes: These are defined in the HTML markup (e.g., id, class, src, href).                                 
+                                    </li>
+                                    <li>Accessing Attributes: Using methods like getAttribute() and setAttribute(), you can read or modify these attributes
+                                    dynamically with JavaScript.</li>
+                                    <li>Direct Access: Some attributes (like id, class, and value) can also be accessed and modified directly as properties of
+                                    the DOM element object.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main part -->
+
+
+
+    <!-- Js file link  -->
+    <script src="./js/features.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- Js file link  -->
+</body>
+
+</html>
