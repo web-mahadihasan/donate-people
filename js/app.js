@@ -1,9 +1,6 @@
 
 // get elements 
 let mainBalanceAmount = getElementText("main-balance");
-// const donationMainBalance = getElementTextByQuery(".donation-main-balance");
-
-
 
 
 // Button Color swap 
@@ -63,6 +60,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
 document.getElementById("blogs-btn").addEventListener("click", function(){
   window.location.href = ("blogs.html");
 });
+
 
 
 document.getElementById("donate-kurigram").addEventListener("click", function(event){

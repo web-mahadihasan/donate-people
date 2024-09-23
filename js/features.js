@@ -11,6 +11,10 @@ function getElementText(id) {
   return elementTextValue;
 }
 
+document.getElementById("home-btn").addEventListener("click", function () {
+  window.location.href = "index.html";
+  console.log("home");
+});
 
 function historyGenerator(amount, title){
   const historyContainer = document.getElementById("history-container");
