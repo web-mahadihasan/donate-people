@@ -60,7 +60,9 @@ document.getElementById("history-btn").addEventListener("click", function () {
         donationContainer.classList.add("hidden");
 });
 
-
+document.getElementById("blogs-btn").addEventListener("click", function(){
+  window.location.href = ("blogs.html");
+});
 
 
 document.getElementById("donate-kurigram").addEventListener("click", function(event){
@@ -82,3 +84,5 @@ document.getElementById("donate-kurigram").addEventListener("click", function(ev
   }
 
 });
+
+
