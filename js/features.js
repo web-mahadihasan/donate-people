@@ -1,3 +1,7 @@
+
+document.getElementById("home-btn").addEventListener("click", function () {
+  window.location.href = "index.html";
+});
 // Features Common js
 let mainBalanceAmount = Number(document.getElementById("main-balance").innerText);
 
@@ -46,6 +50,3 @@ function amountCalculate(totalDonation, inputAmount, title) {
 const hh = document.getElementById("home-btn");
 console.log(hh);
 
-document.getElementById("home-btn").addEventListener("click", function(){
-  window.location.href = "index.html";
-});
