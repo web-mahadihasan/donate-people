@@ -27,7 +27,7 @@ function historyGenerator(amount, title){
           <span id="coin-logo" class="bg-[#f39e09] py-1 px-2 text-base rounded-full text-white"><i
               class="fa-solid fa-bangladeshi-taka-sign"></i></span>
           <span>${amount}</span>
-          <span>Taka is</span>
+          <span>Taka is Donation for</span>
           <span>${title}</span>
         </h4>
         <p class="text-secondary font-light">Date : <span>${dateTime}</span></p>
@@ -37,4 +37,7 @@ function historyGenerator(amount, title){
   historyContainer.appendChild(createHistory);
 }
 // Features Common js
+
+
+// alert show
 

@@ -48,17 +48,17 @@
         <!-- Navbar  -->
         <nav class="bg-[#F9F7F3] py-3 px-4">
             <div class="container mx-auto">
-                <div class="navbar flex flex-col md:flex-row justify-between">
-                    <div class="order-3 md:order-1">
+                <div class="navbar flex flex-row justify-between">
+                    <div class="">
                         <a id="home-btn" class="btn bg-primary text-lg font-semibold px-8">Home</a>
                     </div>
 
-                    <div class="flex items-center gap-4 order-1 md:order-2">
+                    <div class="flex items-center gap-4 ">
                         <img src="./assets/logo.png" alt="Logo image" class="w-10">
-                        <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
+                        <h3 class="font-semibold text-xl hidden md:flex">Donate Bangladesh</h3>
                     </div>
-                    <div class="px-4 py-3 space-x-1 order-2 md:order-3">
-                        <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i
+                    <div class="px-4 py-3 space-x-1 ">
+                        <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white text-xs"><i
                                 class="fa-solid fa-bangladeshi-taka-sign"></i></span>
                         <span class="text-secondary font-medium text-xl">10500 </span>
                         <span class="text-secondary font-medium text-xl">BDT</span>
@@ -77,11 +77,11 @@
                 <span>Important FAQ</span>
                 <span><img src="./assets/question.png" alt="" class=""></span>
             </h1>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
-                <div class="flex justify-center ">
-                    <img src="./assets/faq.png" alt="" class="">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 mt-12">
+                <div class="flex justify-center flex-1 ">
+                    <img src="./assets/faq.png" alt="" class="w-[400px]">
                 </div>
-                <div class="col-span-2">
+                <div class="flex-1">
                     <div class="join join-vertical w-full">
                         <div class="collapse collapse-arrow join-item border-base-300 border py-5">
                             <input type="radio" name="my-accordion-4" checked="checked" />
@@ -139,7 +139,19 @@
     </main>
     <!-- Main part -->
 
-
+    <footer class="bg-[#F9F7F3]">
+        <!-- copyright -->
+        <div class="container mx-auto flex flex-col items-center text-text-black p-9 mt-20">
+            <p class="text-center">Copyright &copy; 2024 - All rights reserved by Donate Bangladesh BD.</p>
+            <div class="flex space-x-2">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+        <!-- copyright -->
+    </footer>
+    </footer>
 
     <!-- Js file link  -->
     <script src="/js/features.js"></script>
