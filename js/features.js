@@ -47,6 +47,5 @@ const hh = document.getElementById("home-btn");
 console.log(hh);
 
 document.getElementById("home-btn").addEventListener("click", function(){
-  // window.location.href = "index.html";
-  console.log("select");
+  window.location.href = "index.html";
 });
