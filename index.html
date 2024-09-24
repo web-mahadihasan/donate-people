@@ -102,7 +102,28 @@
                     <div>
                         <input id="donate-kurigram-input" type="text" name="" id="" class="input input-bordered w-full" placeholder="Write Donation Amount">
                     </div>
-                    <button id="donate-kurigram" class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+                    <div>
+                        <button id="donate-kurigram"  class="btn bg-primary w-full text-xl font-medium">Donate Now</button>
+                        <!-- onclick="my_modal_1.showModal()" -->
+                        <dialog id="my_modal_1" class="modal hidden">
+                            <div class="modal-box text-center space-y-3">                             
+                                <img src="./assets/check-mark.png" alt="" class="w-[50px] text-center mx-auto">                               
+                                <h3 class="text-3xl text-text-black font-bold">Congratulations</h3>
+                                <p class="py-4">
+                                    <span class="bg-[#f39e09] py-1 px-2 rounded-full text-white"><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                                </p>
+                                <p class="text-secondary">You have donated <span id="show-modal-amount">***</span> Taka for Humankind</p>
+                                <h4 class="text-2xl text-text-black font-bold mb-2">Successfully</h4>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn px-8 hover:bg-primary hover:border-none">Close Information</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+
                 </div>
            </div>
 

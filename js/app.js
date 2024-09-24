@@ -67,7 +67,7 @@ document.getElementById("donate-kurigram").addEventListener("click", function(ev
   let donationAmount = getElementText("donation-kurigram-amount");
   const kurigramDonationInput = getElementValue("donate-kurigram-input");
 
-  if (isNaN(kurigramDonationInput) || kurigramDonationInput < 0 || kurigramDonationInput > mainBalanceAmount){
+  if (isNaN(kurigramDonationInput) || kurigramDonationInput <= 0 || kurigramDonationInput > mainBalanceAmount){
     alert("Please enter a valid number.");
     return;
   }else{
@@ -76,6 +76,12 @@ document.getElementById("donate-kurigram").addEventListener("click", function(ev
     document.getElementById("main-balance").innerText = mainBalanceAmount;
     document.getElementById("donation-kurigram-amount").innerText = donationAmount;
 
+    document.getElementById("show-modal-amount").innerText =
+      kurigramDonationInput;
+    document.getElementById("my_modal_1").classList.remove("hidden");
+    my_modal_1.showModal();
+
+    document.getElementById("donate-kurigram-input").value = "";
     // For history information
     const donationTitle = document.getElementById("kurigram-donation-title").innerText
     historyGenerator(kurigramDonationInput, donationTitle);
