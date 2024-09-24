@@ -74,18 +74,17 @@ document.getElementById("donate-kurigram").addEventListener("click", function(ev
   }else{
     donationAmount += kurigramDonationInput;
     mainBalanceAmount -= kurigramDonationInput;
-    document.getElementById("main-balance").innerText = mainBalanceAmount;
-    document.getElementById("donation-kurigram-amount").innerText = donationAmount;
+    document.getElementById("main-balance").innerText = mainBalanceAmount.toFixed(2);
+    document.getElementById("donation-kurigram-amount").innerText = donationAmount.toFixed(2);
 
-    document.getElementById("show-modal-amount").innerText =
-      kurigramDonationInput;
+    document.getElementById("show-modal-amount").innerText = kurigramDonationInput.toFixed(2);
     document.getElementById("my_modal_1").classList.remove("hidden");
     my_modal_1.showModal();
 
     document.getElementById("input-amount-kurigram").value = "";
     // For history information
     const donationTitle = document.getElementById("kurigram-donation-title").innerText
-    historyGenerator(kurigramDonationInput, donationTitle);
+    historyGenerator(kurigramDonationInput.toFixed(2), donationTitle);
   }
 
 });
@@ -103,17 +102,17 @@ document.getElementById("feni-donation-btn").addEventListener("click", function(
   }else{
     donationAmount += feniDonationInput;
     mainBalanceAmount -= feniDonationInput;
-    document.getElementById("main-balance").innerText = mainBalanceAmount;
-    document.getElementById("feni-donation-amount").innerText = donationAmount;
+    document.getElementById("main-balance").innerText = mainBalanceAmount.toFixed(2);
+    document.getElementById("feni-donation-amount").innerText = donationAmount.toFixed(2);
 
-    document.getElementById("show-modal-amount").innerText = feniDonationInput;
+    document.getElementById("show-modal-amount").innerText = feniDonationInput.toFixed(2);
     document.getElementById("my_modal_1").classList.remove("hidden");
     my_modal_1.showModal();
 
     document.getElementById("input-amount-feni").value = "";
     // For history information
     const donationTitle = document.getElementById("feni-donation-title").innerText
-    historyGenerator(feniDonationInput, donationTitle);
+    historyGenerator(feniDonationInput.toFixed(2), donationTitle);
   }
 
 });
@@ -130,17 +129,17 @@ document.getElementById("quota-donation-btn").addEventListener("click", function
   }else{
     donationAmount += quotaDonationInput;
     mainBalanceAmount -= quotaDonationInput;
-    document.getElementById("main-balance").innerText = mainBalanceAmount;
-    document.getElementById("quota-donation-amount").innerText = donationAmount;
+    document.getElementById("main-balance").innerText = mainBalanceAmount.toFixed(2);
+    document.getElementById("quota-donation-amount").innerText = donationAmount.toFixed(2);
 
-    document.getElementById("show-modal-amount").innerText = quotaDonationInput;
+    document.getElementById("show-modal-amount").innerText = quotaDonationInput.toFixed(2);
     document.getElementById("my_modal_1").classList.remove("hidden");
     my_modal_1.showModal();
 
     document.getElementById("input-amount-quota").value = "";
     // For history information
     const donationTitle = document.getElementById("quota-donation-title").innerText
-    historyGenerator(quotaDonationInput, donationTitle);
+    historyGenerator(quotaDonationInput.toFixed(2), donationTitle);
   }
 
 });
@@ -157,17 +156,17 @@ document.getElementById("winter-donation-btn").addEventListener("click", functio
   }else{
     donationAmount += winterDonationInput;
     mainBalanceAmount -= winterDonationInput;
-    document.getElementById("main-balance").innerText = mainBalanceAmount;
-    document.getElementById("winter-donation-amount").innerText = donationAmount;
+    document.getElementById("main-balance").innerText = mainBalanceAmount.toFixed(2);
+    document.getElementById("winter-donation-amount").innerText = donationAmount.toFixed(2);
 
-    document.getElementById("show-modal-amount").innerText = winterDonationInput;
+    document.getElementById("show-modal-amount").innerText = winterDonationInput.toFixed(2);
     document.getElementById("my_modal_1").classList.remove("hidden");
     my_modal_1.showModal();
 
     document.getElementById("input-amount-winter").value = "";
     // For history information
     const donationTitle = document.getElementById("winter-donation-title").innerText
-    historyGenerator(winterDonationInput, donationTitle);
+    historyGenerator(winterDonationInput.toFixed(2), donationTitle);
   }
 
 });
