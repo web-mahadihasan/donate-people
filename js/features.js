@@ -1,21 +1,7 @@
 // Features Common js
-function getElementValue(id) {
-  const element = document.getElementById(id).value;
-  const elementValue = Number(element);
-  return elementValue;
-}
+let mainBalanceAmount = Number(document.getElementById("main-balance").innerText);
 
-function getElementText(id) {
-  const elementText = document.getElementById(id).innerText;
-  const elementTextValue = Number(elementText);
-  return elementTextValue;
-}
-
-document.getElementById("home-btn").addEventListener("click", function () {
-  window.location.href = "index.html";
-  console.log("home");
-});
-
+// For History generator 
 function historyGenerator(amount, title){
   const historyContainer = document.getElementById("history-container");
   const dateTime = new Date()
@@ -36,8 +22,31 @@ function historyGenerator(amount, title){
 
   historyContainer.appendChild(createHistory);
 }
+
+// Amount Calculator 
+function amountCalculate(totalDonation, inputAmount, title) {
+  let totalDonationAmount = Number(document.getElementById(totalDonation).innerText);
+  const donationInputAmount = Number(inputAmount.toFixed(2));
+
+  const totalAmount = totalDonationAmount + donationInputAmount;
+  mainBalanceAmount = mainBalanceAmount - donationInputAmount;
+  document.getElementById(totalDonation).innerText = totalAmount;
+  document.getElementById("main-balance").innerText = mainBalanceAmount.toFixed(2);
+
+  // For modal 
+  document.getElementById("show-modal-amount").innerText = donationInputAmount;
+  document.getElementById("my_modal_1").classList.remove("hidden");
+  my_modal_1.showModal();
+
+  // For History 
+  historyGenerator(donationInputAmount, title);
+}
 // Features Common js
 
+const hh = document.getElementById("home-btn");
+console.log(hh);
 
-// alert show
-
+document.getElementById("home-btn").addEventListener("click", function(){
+  // window.location.href = "index.html";
+  console.log("select");
+});
