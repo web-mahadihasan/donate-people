@@ -49,6 +49,3 @@ function amountCalculate(totalDonation, inputAmount, title) {
 }
 // Features Common js
 
-// document.getElementById("home-btn").addEventListener("click", function () {
-//   window.location.href = "index.html";
-// });
